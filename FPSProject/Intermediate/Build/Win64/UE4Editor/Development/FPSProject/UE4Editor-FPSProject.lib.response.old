@@ -1,0 +1,16 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-FPSProject.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"D:\UnrealProject\UE4_PJ2\FPSProject\Intermediate\Build\Win64\FPSProjectEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"D:\UnrealProject\UE4_PJ2\FPSProject\Intermediate\Build\Win64\UE4Editor\Development\FPSProject\FPSProject.cpp.obj"
+"D:\UnrealProject\UE4_PJ2\FPSProject\Intermediate\Build\Win64\UE4Editor\Development\FPSProject\FPSProjectGameModeBase.cpp.obj"
+"D:\UnrealProject\UE4_PJ2\FPSProject\Intermediate\Build\Win64\UE4Editor\Development\FPSProject\FPSProject.init.gen.cpp.obj"
+"D:\UnrealProject\UE4_PJ2\FPSProject\Intermediate\Build\Win64\UE4Editor\Development\FPSProject\FPSProjectGameModeBase.gen.cpp.obj"
+"D:\UnrealProject\UE4_PJ2\FPSProject\Intermediate\Build\Win64\UE4Editor\Development\FPSProject\Default.rc2.res"
+/OUT:"D:\UnrealProject\UE4_PJ2\FPSProject\Intermediate\Build\Win64\UE4Editor\Development\FPSProject\UE4Editor-FPSProject.lib"
+/INCLUDE:IMPLEMENT_MODULE_FPSProject
