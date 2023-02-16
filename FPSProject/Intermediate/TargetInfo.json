@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "FPSProject",
+			"Path": "D:\\UnrealProject\\UE4_PJ2\\FPSProject\\Source\\FPSProject.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "FPSProjectEditor",
+			"Path": "D:\\UnrealProject\\UE4_PJ2\\FPSProject\\Source\\FPSProjectEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
