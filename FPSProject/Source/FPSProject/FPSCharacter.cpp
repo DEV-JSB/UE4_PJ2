@@ -75,6 +75,9 @@ void AFPSCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompon
 	// 점프 할당
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &AFPSCharacter::StartJump);
 	PlayerInputComponent->BindAction("Jump", IE_Released, this, &AFPSCharacter::StopJump);
+
+	PlayerInputComponent->BindAction("Fire", IE_Pressed, this, &AFPSCharacter::Fire);
+
 }
 
 // 앞뒤로 움직이는 함수 구현
@@ -102,5 +105,45 @@ void AFPSCharacter::StartJump()
 void AFPSCharacter::StopJump()
 {
 	bPressedJump = false;
+}
+
+void AFPSCharacter::Fire()
+{
+	if (ProjectileClass)
+	{
+		// 카메라 트랜스폼 받기
+		FVector CamearaLocation;
+		FRotator CameraRotation;
+		GetActorEyesViewPoint(CamearaLocation, CameraRotation);
+
+		// 총구를 카메라 약간 앞으로 설정
+		MuzzleOffset.Set(100.0f, 0.0f, 0.0f);
+
+		// 머블 오프셋을 카메라 좌표계에서 월드 좌표계로 변환
+		FVector MuzzleLocation = CamearaLocation + FTransform(CameraRotation).TransformVector(MuzzleOffset);
+
+		// 목표를 약간 위쪽으로 기울인다
+		FRotator MuzzleRotation = CameraRotation;
+		MuzzleRotation.Pitch += 10.0f;
+
+		UWorld* World = GetWorld();
+
+		if (World)
+		{
+			FActorSpawnParameters SpawnParams;
+			SpawnParams.Owner = this;
+			SpawnParams.Instigator = GetInstigator();
+
+			AFPSProjectile* Projectile = World->SpawnActor<AFPSProjectile>(ProjectileClass, MuzzleLocation, MuzzleRotation, SpawnParams);
+			if (Projectile)
+			{
+				// 투사체의 궤도를 설정한다
+				FVector LaunchDirection = MuzzleRotation.Vector();
+				Projectile->FireInDirection(LaunchDirection);
+			}
+		}
+
+
+	}
 }
 

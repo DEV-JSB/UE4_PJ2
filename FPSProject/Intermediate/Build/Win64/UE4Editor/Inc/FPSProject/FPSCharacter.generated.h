@@ -16,6 +16,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define FPSProject_Source_FPSProject_FPSCharacter_h_15_SPARSE_DATA
 #define FPSProject_Source_FPSProject_FPSCharacter_h_15_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execFire); \
 	DECLARE_FUNCTION(execStopJump); \
 	DECLARE_FUNCTION(execStartJump); \
 	DECLARE_FUNCTION(execMoveRight); \
@@ -24,6 +25,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 #define FPSProject_Source_FPSProject_FPSCharacter_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execFire); \
 	DECLARE_FUNCTION(execStopJump); \
 	DECLARE_FUNCTION(execStartJump); \
 	DECLARE_FUNCTION(execMoveRight); \

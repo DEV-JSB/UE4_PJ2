@@ -6,8 +6,8 @@
 #include "GameFramework/Character.h"
 #include "Camera/CameraComponent.h"
 #include "Components/CapsuleComponent.h"
+#include "FPSProjectile.h"
 #include "FPSCharacter.generated.h"
-
 
 UCLASS()
 class FPSPROJECT_API AFPSCharacter : public ACharacter
@@ -30,11 +30,7 @@ public:
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
 	
-	UPROPERTY(VisibleAnywhere)
-		UCameraComponent* FPSCameraComponent;
-	// Fps 특성을 고려한 매쉬
-	UPROPERTY(VisibleDefaultsOnly, Category = Mesh)
-		USkeletalMeshComponent* FPSMesh;
+	
 	UFUNCTION()
 		void MoveFoward(float Value);
 	UFUNCTION()
@@ -43,4 +39,20 @@ public:
 		void StartJump();
 	UFUNCTION()
 		void StopJump();
+	UFUNCTION()
+		void Fire();
+public:
+	// 카메라 컴포넌트
+	UPROPERTY(VisibleAnywhere)
+		UCameraComponent* FPSCameraComponent;
+	// Fps 특성을 고려한 매쉬
+	UPROPERTY(VisibleDefaultsOnly, Category = Mesh)
+		USkeletalMeshComponent* FPSMesh;
+	// 총구의 위치
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Gameplay)
+		FVector MuzzleOffset;
+	// 총알 클래스
+	UPROPERTY(EditDefaultsOnly, Category = Projectile)
+		TSubclassOf<class AFPSProjectile> ProjectileClass;
+	
 };
