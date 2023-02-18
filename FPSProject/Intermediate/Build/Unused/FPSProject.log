@@ -1,12 +1,19 @@
 ﻿  Using 'git status' to determine working set for adaptive non-unity build (D:\UnrealProject\UE4_PJ2).
+  Deleted hot-reload file: D:\UnrealProject\UE4_PJ2\FPSProject\Binaries\Win64\UE4Editor-FPSProject-0001.dll
+  Deleted hot-reload file: D:\UnrealProject\UE4_PJ2\FPSProject\Binaries\Win64\UE4Editor-FPSProject-0002.dll
+  Deleted hot-reload file: D:\UnrealProject\UE4_PJ2\FPSProject\Binaries\Win64\UE4Editor-FPSProject-0004.dll
+  Deleted hot-reload file: D:\UnrealProject\UE4_PJ2\FPSProject\Binaries\Win64\UE4Editor-FPSProject-0005.dll
+  Deleted hot-reload file: D:\UnrealProject\UE4_PJ2\FPSProject\Intermediate\Build\Win64\UE4Editor\Development\FPSProject\UE4Editor-FPSProject-0001.lib
+  Deleted hot-reload file: D:\UnrealProject\UE4_PJ2\FPSProject\Intermediate\Build\Win64\UE4Editor\Development\FPSProject\UE4Editor-FPSProject-0002.lib
+  Deleted hot-reload file: D:\UnrealProject\UE4_PJ2\FPSProject\Intermediate\Build\Win64\UE4Editor\Development\FPSProject\UE4Editor-FPSProject-0004.lib
+  Deleted hot-reload file: D:\UnrealProject\UE4_PJ2\FPSProject\Intermediate\Build\Win64\UE4Editor\Development\FPSProject\UE4Editor-FPSProject-0005.lib
   Building FPSProjectEditor...
   Using Visual Studio 2019 14.29.30146 toolchain (D:\VS2019\VC\Tools\MSVC\14.29.30133) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  Building 4 actions with 16 processes...
-    [1/4] FPSHUD.cpp
-    [2/4] UE4Editor-FPSProject-0005.lib
-       Creating library D:\UnrealProject\UE4_PJ2\FPSProject\Intermediate\Build\Win64\UE4Editor\Development\FPSProject\UE4Editor-FPSProject-0005.lib and object D:\UnrealProject\UE4_PJ2\FPSProject\Intermediate\Build\Win64\UE4Editor\Development\FPSProject\UE4Editor-FPSProject-0005.exp
-    [3/4] UE4Editor-FPSProject-0005.dll
-       Creating library D:\UnrealProject\UE4_PJ2\FPSProject\Intermediate\Build\Win64\UE4Editor\Development\FPSProject\UE4Editor-FPSProject-0005.suppressed.lib and object D:\UnrealProject\UE4_PJ2\FPSProject\Intermediate\Build\Win64\UE4Editor\Development\FPSProject\UE4Editor-FPSProject-0005.suppressed.exp
-    [4/4] FPSProjectEditor.target
-  Total time in Parallel executor: 1.40 seconds
-  Total execution time: 1.82 seconds
+  Building 3 actions with 16 processes...
+    [1/3] UE4Editor-FPSProject.lib
+       Creating library D:\UnrealProject\UE4_PJ2\FPSProject\Intermediate\Build\Win64\UE4Editor\Development\FPSProject\UE4Editor-FPSProject.lib and object D:\UnrealProject\UE4_PJ2\FPSProject\Intermediate\Build\Win64\UE4Editor\Development\FPSProject\UE4Editor-FPSProject.exp
+    [2/3] UE4Editor-FPSProject.dll
+       Creating library D:\UnrealProject\UE4_PJ2\FPSProject\Intermediate\Build\Win64\UE4Editor\Development\FPSProject\UE4Editor-FPSProject.suppressed.lib and object D:\UnrealProject\UE4_PJ2\FPSProject\Intermediate\Build\Win64\UE4Editor\Development\FPSProject\UE4Editor-FPSProject.suppressed.exp
+    [3/3] FPSProjectEditor.target
+  Total time in Parallel executor: 3.48 seconds
+  Total execution time: 5.27 seconds
