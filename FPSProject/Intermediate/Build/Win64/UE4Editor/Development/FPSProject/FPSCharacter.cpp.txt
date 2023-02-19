@@ -1,4 +1,6 @@
 D:\UnrealProject\UE4_PJ2\FPSProject\Intermediate\Build\Win64\UE4Editor\Development\FPSProject\Definitions.FPSProject.h
+D:\UnrealProject\UE4_PJ2\FPSProject\Source\FPSProject\FPSAssultRifle.h
+D:\UnrealProject\UE4_PJ2\FPSProject\Intermediate\Build\Win64\UE4Editor\Inc\FPSProject\FPSAssultRifle.generated.h
 D:\UnrealProject\UE4_PJ2\FPSProject\Source\FPSProject\FPSCharacter.h
 D:\MVAT\UE_4.26\Engine\Source\Runtime\Engine\Classes\GameFramework/Character.h
 D:\MVAT\UE_4.26\Engine\Source\Runtime\Engine\Classes\GameFramework/CharacterMovementReplication.h

@@ -1,6 +1,7 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 
+#include "FPSAssultRifle.h"
 #include "FPSCharacter.h"
 
 // Sets default values
@@ -40,6 +41,20 @@ AFPSCharacter::AFPSCharacter()
 	// 3인칭 BodyMesh 를 볼 수 없도록 설정한다.
 	GetMesh()->SetOwnerNoSee(true);
 
+
+
+	// 무기 생성
+	UWorld* World = GetWorld();
+	if (World)
+	{
+		FActorSpawnParameters SpawnParams;
+		SpawnParams.Owner = this;
+		FVector SpawnLocation = this->GetMesh()->GetSocketLocation(TEXT("b_RightWeapon"));
+		FRotator Rotation = GetActorForwardVector().Rotation();
+
+		AFPSAssultRifle* test = GetWorld()->SpawnActor<AFPSAssultRifle>(Weapon,SpawnLocation, Rotation, SpawnParams);
+	}
+		
 }
 
 // Called when the game starts or when spawned

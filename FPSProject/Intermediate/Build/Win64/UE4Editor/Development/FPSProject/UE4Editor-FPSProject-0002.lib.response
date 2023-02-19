@@ -7,11 +7,13 @@
 /IGNORE:4221
 /NODEFAULTLIB
 "D:\UnrealProject\UE4_PJ2\FPSProject\Intermediate\Build\Win64\FPSProjectEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"D:\UnrealProject\UE4_PJ2\FPSProject\Intermediate\Build\Win64\UE4Editor\Development\FPSProject\FPSAssultRifle.cpp.obj"
 "D:\UnrealProject\UE4_PJ2\FPSProject\Intermediate\Build\Win64\UE4Editor\Development\FPSProject\FPSCharacter.cpp.obj"
 "D:\UnrealProject\UE4_PJ2\FPSProject\Intermediate\Build\Win64\UE4Editor\Development\FPSProject\FPSHUD.cpp.obj"
 "D:\UnrealProject\UE4_PJ2\FPSProject\Intermediate\Build\Win64\UE4Editor\Development\FPSProject\FPSProject.cpp.obj"
 "D:\UnrealProject\UE4_PJ2\FPSProject\Intermediate\Build\Win64\UE4Editor\Development\FPSProject\FPSProjectGameModeBase.cpp.obj"
 "D:\UnrealProject\UE4_PJ2\FPSProject\Intermediate\Build\Win64\UE4Editor\Development\FPSProject\FPSProjectile.cpp.obj"
+"D:\UnrealProject\UE4_PJ2\FPSProject\Intermediate\Build\Win64\UE4Editor\Development\FPSProject\FPSAssultRifle.gen.cpp.obj"
 "D:\UnrealProject\UE4_PJ2\FPSProject\Intermediate\Build\Win64\UE4Editor\Development\FPSProject\FPSCharacter.gen.cpp.obj"
 "D:\UnrealProject\UE4_PJ2\FPSProject\Intermediate\Build\Win64\UE4Editor\Development\FPSProject\FPSHUD.gen.cpp.obj"
 "D:\UnrealProject\UE4_PJ2\FPSProject\Intermediate\Build\Win64\UE4Editor\Development\FPSProject\FPSProject.init.gen.cpp.obj"
