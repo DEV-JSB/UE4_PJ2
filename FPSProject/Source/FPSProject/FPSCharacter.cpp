@@ -42,19 +42,19 @@ AFPSCharacter::AFPSCharacter()
 	GetMesh()->SetOwnerNoSee(true);
 
 
-
-	// 公扁 积己
-	UWorld* World = GetWorld();
-	if (World)
+	if (Weapon)
 	{
-		FActorSpawnParameters SpawnParams;
-		SpawnParams.Owner = this;
-		FVector SpawnLocation = this->GetMesh()->GetSocketLocation(TEXT("b_RightWeapon"));
-		FRotator Rotation = GetActorForwardVector().Rotation();
-
-		AFPSAssultRifle* test = GetWorld()->SpawnActor<AFPSAssultRifle>(Weapon,SpawnLocation, Rotation, SpawnParams);
+		// 公扁 积己
+		UWorld* World = GetWorld();
+		if (World)
+		{
+			FActorSpawnParameters SpawnParams;
+			SpawnParams.Owner = this;
+			FVector SpawnLocation = FVector::ZeroVector;
+			FRotator Rotation = GetActorForwardVector().Rotation();
+			GetWorld()->SpawnActor<AFPSAssultRifle>(Weapon, SpawnLocation, Rotation, SpawnParams);
+		}
 	}
-		
 }
 
 // Called when the game starts or when spawned

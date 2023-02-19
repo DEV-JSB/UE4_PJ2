@@ -58,7 +58,7 @@ public:
 	UPROPERTY(EditDefaultsOnly, Category = Projectile)
 		TSubclassOf<class AFPSProjectile> ProjectileClass;
 	
-	UPROPERTY(VisibleAnywhere, Category = Weapon)
-		TSubclassOf<class AFPSAssultRifle> Weapon;
+	UPROPERTY(EditDefaultsOnly, Category = Weapon)
+		TSubclassOf<class AFPSAssultRifle> Weapon;	
 
 };
