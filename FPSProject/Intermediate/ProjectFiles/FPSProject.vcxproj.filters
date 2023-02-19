@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\FPSProject.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{5F85F4F9-DBAF-4BBE-A709-B0DEDD94AA7D}</UniqueIdentifier>
+      <UniqueIdentifier>{2E37D92C-7455-477C-9BE9-C54DE7F20955}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\FPSProject.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{F755A711-26A5-401D-A155-F7901B7E4AB7}</UniqueIdentifier>
+      <UniqueIdentifier>{88159476-AA5F-48D1-95AB-2C33FDCF8580}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -27,8 +27,14 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\FPSProject">
-      <UniqueIdentifier>{EBFD6CF1-BE5A-4A48-BED8-6D6C52D2C99A}</UniqueIdentifier>
+      <UniqueIdentifier>{767D5248-21E5-4C7E-B0CB-B79D2479D636}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\FPSProject\FPSAssultRifle.cpp">
+      <Filter>Source\FPSProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FPSProject\FPSAssultRifle.h">
+      <Filter>Source\FPSProject</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\FPSProject\FPSCharacter.cpp">
       <Filter>Source\FPSProject</Filter>
     </ClCompile>
@@ -60,18 +66,6 @@
       <Filter>Source\FPSProject</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\FPSProject\FPSProjectile.h">
-      <Filter>Source\FPSProject</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Source\FPSProject\FPSRangeWeapon.cpp">
-      <Filter>Source\FPSProject</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\FPSProject\FPSRangeWeapon.h">
-      <Filter>Source\FPSProject</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Source\FPSProject\FPSTestPistol.cpp">
-      <Filter>Source\FPSProject</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\FPSProject\FPSTestPistol.h">
       <Filter>Source\FPSProject</Filter>
     </ClInclude>
   </ItemGroup>
